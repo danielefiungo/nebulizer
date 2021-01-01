@@ -1,0 +1,4 @@
+{
+  "packages": ["modules/*", "nebulizer-api"],
+  "version": "independent"
+}
