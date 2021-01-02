@@ -1,0 +1,31 @@
+# Variables 
+## Environments
+@host = localhost:3000
+
+## Nebula test value
+
+@network = test2
+@hostname = test
+### Add resources
+POST /network/{{network}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+### Add resources
+GET  /network/{{network}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+### Add resources
+POST /network/{{network}}/host/{{hostname}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+    "ip":"192.168.100.0/24",
+    "groups": ["user"]
+}
+### Add resources
+GET  /network/{{network}}/host/{{hostname}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
