@@ -1,18 +1,35 @@
+// Place your settings in this file to overwrite default and user settings.
 {
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#d04649",
-    "activityBar.activeBorder": "#37cb34",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#37cb34",
-    "activityBarBadge.foreground": "#15202b",
-    "titleBar.activeBackground": "#b52e31",
-    "titleBar.inactiveBackground": "#b52e3199",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#b52e31",
-    "statusBarItem.hoverBackground": "#d04649",
-    "statusBar.foreground": "#e7e7e7"
+  "window.title": "nebulizer${separator}${dirty}${activeEditorShort}${separator}${appName}",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
-  "peacock.color": "#b52e31"
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "appService.zipIgnorePattern": [".vscode{,/**}"],
+  "appService.deploySubpath": "",
+  "files.eol": "\n",
+  "cSpell.words": ["Millisecs", "ghii", "nats", "openid", "pino"],
+  "errorLens.annotationPrefix": ["💥", "⚠️", "ℹ", "💡"],
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.fontSize": "12",
+  "errorLens.fontStyleItalic": true,
+  "errorLens.margin": "30ch"
 }
